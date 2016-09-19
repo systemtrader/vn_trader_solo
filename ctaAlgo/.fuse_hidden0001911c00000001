@@ -1,0 +1,13 @@
+[
+    {
+        "name": "double ema",
+        "className": "DoubleEmaDemo",
+        "vtSymbol": "IF1612"
+    }
+    ,
+        {
+        "name": "double ema rb",
+        "className": "DoubleEmaDemo",
+        "vtSymbol": "rb1701"
+    }
+]

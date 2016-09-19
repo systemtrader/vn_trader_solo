@@ -1,0 +1,16 @@
+[
+	{
+		"name": "atr_breaking",
+		"className": "atr_break",
+		"vtSymbol": "pp1701",
+		"author":"hypnos_chen",
+		"band_range":0.001,
+		"stop_when_profiting":0.015,
+		"stop_when_loss":0.01
+	},
+	{
+		"name": "double ema",
+		"className": "DoubleEmaDemo",
+		"vtSymbol": "IF1612"
+	}
+]
