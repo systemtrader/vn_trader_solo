@@ -174,7 +174,7 @@ class atr_break(CtaTemplate):
 				if whether_open_long:
 					self.buy(self.trading_snapshot["upper_limit"],1)#市价买多一手(以涨停价格委托)
 				if whether_open_short:
-					self.sell(self.trading_snapshot["lower_limit"],1)#市价卖空一手(以跌停价格委托)
+					self.short(self.trading_snapshot["lower_limit"],1)#市价卖空一手(以跌停价格委托)
 				
 			except Exception,current_exception:
 				print u'显示报单异常信息:',current_exception
@@ -191,7 +191,7 @@ class atr_break(CtaTemplate):
 				got_to_stop_loss=bar.close>current_position.stop_loss_price
 				got_to_stop_profiting=bar.close<current_position.stop_profiting_price
 				if got_to_stop_loss or got_to_stop_profiting:#如果要止盈或者止损，买入
-					self.buy(self.trading_snapshot["upper_limit"], 1)
+					self.cover(self.trading_snapshot["upper_limit"], 1)
 				pass
 			pass
 		self.putEvent()
