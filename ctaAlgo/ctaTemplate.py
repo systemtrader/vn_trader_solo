@@ -21,6 +21,21 @@ class CtaTemplate(object):
 		self.inited=False                 # 是否进行了初始化
 		self.trading=False                # 是否启动交易，由引擎管理
 		self.pos=0                        # 持仓情况
+		
+		# 本策略自己的order字典，自己发过的单就存入这个字典中，当回报返回时匹配就做处理，否则忽略，键是tuple,(strategy_name,frontID,sessionID,vt_orderID)，其中vt_orderID为报单时返回的值
+		self.order_map={}
+		
+		
+		try:#记录柜台ID和会话ID
+			self.sessionID=self.ctaEngine.mainEngine.gatewayDict['CTP'].tdApi.sessionID#本策略的会话编号，用于跟界面终端或者其他终端的区分，只限于CTP可用，其他接口时将显示报错信息
+			self.frontID=self.ctaEngine.mainEngine.gatewayDict['CTP'].tdApi.frontID#本策略的柜台编号
+			#在CTP中以上两者外加OrderRef可以标注一笔唯一的订单，vtOrderId是比如CTP.OrderRef
+			
+			
+			
+		except Exception, current_exception:
+			print current_exception
+			pass
 
 		# 设置策略的参数
 		if setting:
@@ -99,6 +114,20 @@ class CtaTemplate(object):
 				vtOrderID = self.ctaEngine.sendStopOrder(self.vtSymbol, orderType, price, volume, self)
 			else:
 				vtOrderID = self.ctaEngine.sendOrder(self.vtSymbol, orderType, price, volume, self)
+			
+			current_order_key=(self.name,self.frontID,self.sessionID,vtOrderID)
+			
+			order_dict={'strategy_name':self.name,
+			            'frontID':self.frontID,
+			            'sessionID':self.sessionID,
+			            'vtOrderID':vtOrderID,
+			            'order_type':orderType,
+			            'price':price,
+			            'volume':volume
+			}
+			
+			self.order_map[current_order_key]=order_dict#记录当前自己发出去的订单
+			
 			return vtOrderID
 		else:
 			# 交易停止时发单返回空字符串
