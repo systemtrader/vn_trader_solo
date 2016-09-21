@@ -14,6 +14,7 @@
 from ctaBase import *
 from ctaTemplate import CtaTemplate
 
+
 class atr_break(CtaTemplate):
 	
 	def __parameter_initialisation(self):
@@ -62,8 +63,11 @@ class atr_break(CtaTemplate):
 		'''成交回报，必须继承实现'''
 		
 		session_instrument_key=(self.sessionID,trade.symbol)#成交的标的
-		
-		#till here，这里要增加筛选，区分此处返回的成交是不是自己下出去的单子，不是要跳过，盘中debug时尝试
+
+		# 本订单的键是tuple,(strategy_name,frontID,sessionID,vt_orderID)，其中vt_orderID为报单时返回的值
+		current_order_key=(self.name,self.frontID,self.sessionID,trade.vtOrderID)
+		if not self.order_map.__contains__(current_order_key):#如果本成交不是由本策略在此次登录会话中发出去的订单产生，直接返回
+			return
 		
 		if self.pos==0:#如果此时已没有净持仓(说明本次成交的是平仓单)
 			self.positions_info.pop(session_instrument_key)#删除此前的开仓记录
@@ -99,6 +103,7 @@ class atr_break(CtaTemplate):
 	def onTick(self, tick):
 		"""收到行情TICK推送（必须由用户继承实现）"""
 		# 计算K线
+		super(atr_break, self).onTick(tick)#调用父类的ontick
 		
 		if not self.trading_snapshot.has_key("open_today"):#如果之前没有记录开盘价，则记录今日的开盘价和张跌停价格
 			self.trading_snapshot['open_today']=tick.openPrice
@@ -162,6 +167,9 @@ class atr_break(CtaTemplate):
 		"""收到Bar推送（必须由用户继承实现）"""
 		#计算策略指标
 		# 发出状态更新事件
+		
+		
+		
 		
 		if not self.trading_snapshot.has_key('upper_band'):#如果盘中缓存没有记录过本日开盘价的上band
 			self.trading_snapshot['upper_band']=self.trading_snapshot['open_today']*(1+self.band_range)
@@ -283,6 +291,8 @@ class DoubleEmaDemo(CtaTemplate):
 	def onTick(self, tick):
 		"""收到行情TICK推送（必须由用户继承实现）"""
 		# 计算K线
+		super(DoubleEmaDemo, self).onTick(tick)
+		
 		tickMinute = tick.datetime.minute
 		
 		if tickMinute != self.barMinute:

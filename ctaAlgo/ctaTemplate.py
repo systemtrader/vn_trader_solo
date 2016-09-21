@@ -6,6 +6,7 @@
 
 from ctaBase import *
 from vtConstant import *
+import thread
 
 
 ########################################################################
@@ -67,8 +68,9 @@ class CtaTemplate(object):
 
 	#----------------------------------------------------------------------
 	def onTick(self, tick):
-		"""收到行情TICK推送（必须由用户继承实现）"""
-		raise NotImplementedError
+		
+		#print tick.symbol,thread.get_ident() #打印线程ID
+		pass
 
 	#----------------------------------------------------------------------
 	def onOrder(self, order):
