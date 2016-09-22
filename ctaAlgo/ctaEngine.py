@@ -1,4 +1,4 @@
-# encoding: UTF-8
+# -*- coding: utf-8 -*-
 
 '''
 本文件中实现了CTA策略引擎，针对CTA类型的策略，抽象简化了部分底层接口的功能。
@@ -516,6 +516,22 @@ class CtaEngine(object):
 		else:
 			self.writeCtaLog(u'策略实例不存在：' + name)
 			return None
+		
+		pass
+	
+	def getStrategyDynamic(self,name):
+		if name in self.strategyDict:
+			strategy=self.strategyDict[name]
+			dynamic_dict=OrderedDict()
+			
+			for key in strategy.dynamic_monitored.keys():
+				dynamic_dict[key]=strategy.dynamic_monitored[key]
+				pass
+			return dynamic_dict
+		else:
+			self.writeCtaLog(u'本策略动态参数字典不存在：'+name)
+			return None
+		pass
 		
 	#----------------------------------------------------------------------
 	def putStrategyEvent(self, name):

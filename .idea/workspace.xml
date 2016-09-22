@@ -2,12 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37757026-45d3-4cbe-af31-6dc6b09ffc83" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testing_funclet.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/to_do_list.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ContractData.vt.dat" afterPath="$PROJECT_DIR$/ContractData.vt.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/CTP/QueryRsp.con" afterPath="$PROJECT_DIR$/temp/CTP/QueryRsp.con" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/CTP/TradingDay.con" afterPath="$PROJECT_DIR$/temp/CTP/TradingDay.con" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ContractData.vt.bak" afterPath="$PROJECT_DIR$/ContractData.vt.bak" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ContractData.vt.dir" afterPath="$PROJECT_DIR$/ContractData.vt.dir" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ctaAlgo/ctaDemo.py" afterPath="$PROJECT_DIR$/ctaAlgo/ctaDemo.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ctaAlgo/ctaEngine.py" afterPath="$PROJECT_DIR$/ctaAlgo/ctaEngine.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ctaAlgo/ctaTemplate.py" afterPath="$PROJECT_DIR$/ctaAlgo/ctaTemplate.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/program_top/utilities/process_and_main_function/__init__.py" afterPath="$PROJECT_DIR$/program_top/utilities/process_and_main_function/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ctaAlgo/uiCtaWidget.py" afterPath="$PROJECT_DIR$/ctaAlgo/uiCtaWidget.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ctpGateway/ctpGateway.py" afterPath="$PROJECT_DIR$/ctpGateway/ctpGateway.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vtFunction.py" afterPath="$PROJECT_DIR$/vtFunction.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vtGateway.py" afterPath="$PROJECT_DIR$/vtGateway.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vtMain.py" afterPath="$PROJECT_DIR$/vtMain.py" />
     </list>
     <ignored path="vn.trader.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,100 +37,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ctaDemo.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ctaAlgo/ctaDemo.py">
+      <file leaf-file-name="vtMain.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vtMain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="105" column="26" selection-start-line="105" selection-start-column="26" selection-end-line="105" selection-end-column="26" />
-              <folding>
-                <element signature="e#19#222#1" expanded="true" />
-                <element signature="e#357#769#0" expanded="true" />
-                <element signature="e#815#919#0" expanded="true" />
-                <element signature="e#943#1032#0" expanded="true" />
-                <element signature="e#1057#1136#0" expanded="true" />
-                <element signature="e#1168#2367#0" expanded="true" />
-                <element signature="e#2391#2470#0" expanded="true" />
-                <element signature="e#4068#5705#0" expanded="true" />
-                <element signature="e#6581#6866#0" expanded="true" />
-                <element signature="e#7227#7300#0" expanded="true" />
-                <element signature="e#7574#8498#0" expanded="true" />
-                <element signature="e#8595#9731#0" expanded="true" />
-                <element signature="e#9837#9901#0" expanded="true" />
-                <element signature="e#10006#10068#0" expanded="true" />
-                <element signature="e#10203#12964#0" expanded="false" />
-                <element signature="e#10662#10794#0" expanded="true" />
-                <element signature="e#10892#11056#0" expanded="true" />
-                <element signature="e#11155#11228#0" expanded="true" />
-                <element signature="e#11325#11398#0" expanded="true" />
-                <element signature="e#11502#12482#0" expanded="true" />
-                <element signature="e#12579#12610#0" expanded="true" />
-                <element signature="e#12715#12797#0" expanded="true" />
-                <element signature="e#12902#12964#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ctaTemplate.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ctaAlgo/ctaTemplate.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="66" column="33" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
-              <folding>
-                <element signature="e#368#1379#0" expanded="true" />
-                <element signature="e#1924#1976#0" expanded="true" />
-                <element signature="e#2238#2289#0" expanded="true" />
-                <element signature="e#2390#2442#0" expanded="true" />
-                <element signature="e#2563#2630#0" expanded="true" />
-                <element signature="e#2752#2820#0" expanded="true" />
-                <element signature="e#3342#4080#0" expanded="true" />
-                <element signature="e#5250#5339#0" expanded="true" />
-                <element signature="e#5439#5500#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ctaBacktesting.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ctaAlgo/ctaBacktesting.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2088">
-              <caret line="313" column="12" selection-start-line="313" selection-start-column="12" selection-end-line="313" selection-end-column="12" />
+            <state relative-caret-position="193">
+              <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ctpGateway.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ctpGateway/ctpGateway.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8928">
-              <caret line="1009" column="0" selection-start-line="1009" selection-start-column="0" selection-end-line="1009" selection-end-column="0" />
-              <folding>
-                <element signature="e#3766#3814#0" expanded="true" />
-                <element signature="e#4558#4815#0" expanded="true" />
-                <element signature="e#5701#11931#0" expanded="false" />
-                <element signature="e#18588#19235#0" expanded="true" />
-                <element signature="e#20304#20317#0" expanded="true" />
-                <element signature="e#37811#37883#0" expanded="true" />
-                <element signature="e#37986#38140#0" expanded="true" />
-                <element signature="e#38251#39890#0" expanded="true" />
-                <element signature="e#41465#42191#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ctaEngine.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ctaAlgo/ctaEngine.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="744">
-              <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
-              <folding>
-                <element signature="e#6778#7370#0" expanded="true" />
-                <element signature="e#7770#8390#0" expanded="true" />
-                <element signature="e#10726#11870#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -128,10 +50,48 @@
       <file leaf-file-name="vtGateway.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vtGateway.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3528">
-              <caret line="397" column="8" selection-start-line="397" selection-start-column="8" selection-end-line="397" selection-end-column="8" />
+            <state relative-caret-position="119">
+              <caret line="65" column="35" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
               <folding>
-                <element signature="e#11317#11830#0" expanded="true" />
+                <element signature="e#925#1210#0" expanded="true" />
+                <element signature="e#1315#1601#0" expanded="true" />
+                <element signature="e#2120#2414#0" expanded="true" />
+                <element signature="e#6952#7729#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ctaDemo.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ctaAlgo/ctaDemo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="208" column="0" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
+              <folding>
+                <element signature="e#25#228#1" expanded="true" />
+                <element signature="e#362#719#0" expanded="true" />
+                <element signature="e#765#863#0" expanded="true" />
+                <element signature="e#887#976#0" expanded="true" />
+                <element signature="e#1001#1080#0" expanded="true" />
+                <element signature="e#1112#2386#0" expanded="true" />
+                <element signature="e#2410#2489#0" expanded="true" />
+                <element signature="e#2519#4036#0" expanded="true" />
+                <element signature="e#4154#5791#0" expanded="true" />
+                <element signature="e#6666#6951#0" expanded="true" />
+                <element signature="e#7312#7385#0" expanded="true" />
+                <element signature="e#7659#8583#0" expanded="true" />
+                <element signature="e#8680#9816#0" expanded="true" />
+                <element signature="e#9922#9986#0" expanded="true" />
+                <element signature="e#10091#10153#0" expanded="true" />
+                <element signature="e#10288#13049#0" expanded="false" />
+                <element signature="e#10747#10879#0" expanded="true" />
+                <element signature="e#10977#11141#0" expanded="true" />
+                <element signature="e#11240#11313#0" expanded="true" />
+                <element signature="e#11410#11483#0" expanded="true" />
+                <element signature="e#11587#12567#0" expanded="true" />
+                <element signature="e#12664#12695#0" expanded="true" />
+                <element signature="e#12800#12882#0" expanded="true" />
+                <element signature="e#12987#13049#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -140,19 +100,89 @@
       <file leaf-file-name="vtEngine.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vtEngine.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
-              <caret line="174" column="31" selection-start-line="174" selection-start-column="27" selection-end-line="174" selection-end-column="36" />
-              <folding />
+            <state relative-caret-position="248">
+              <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+              <folding>
+                <element signature="e#1106#3227#0" expanded="true" />
+                <element signature="e#3357#3440#0" expanded="true" />
+                <element signature="e#3552#3725#0" expanded="true" />
+                <element signature="e#7741#10390#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CTP_connect.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ctpGateway/CTP_connect.json">
+      <file leaf-file-name="ctaEngine.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ctaAlgo/ctaEngine.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="286">
+              <caret line="235" column="0" selection-start-line="235" selection-start-column="0" selection-end-line="235" selection-end-column="0" />
+              <folding>
+                <element signature="e#1101#1988#0" expanded="true" />
+                <element signature="e#7487#7665#0" expanded="true" />
+                <element signature="e#8510#8850#0" expanded="true" />
+                <element signature="e#8950#9227#0" expanded="true" />
+                <element signature="e#10732#11876#0" expanded="true" />
+                <element signature="e#13717#13849#0" expanded="true" />
+                <element signature="e#13956#14245#0" expanded="true" />
+                <element signature="e#14848#15155#0" expanded="true" />
+                <element signature="e#15269#15369#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="uiCtaWidget.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ctaAlgo/uiCtaWidget.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="142" column="46" selection-start-line="142" selection-start-column="46" selection-end-line="142" selection-end-column="46" />
+              <folding>
+                <element signature="e#362#514#0" expanded="true" />
+                <element signature="e#612#784#0" expanded="true" />
+                <element signature="e#892#1295#0" expanded="true" />
+                <element signature="e#1608#1825#0" expanded="true" />
+                <element signature="e#1923#2960#0" expanded="true" />
+                <element signature="e#3077#3457#0" expanded="true" />
+                <element signature="e#3563#3693#0" expanded="true" />
+                <element signature="e#4444#4790#0" expanded="true" />
+                <element signature="e#4888#5906#0" expanded="true" />
+                <element signature="e#6017#6330#0" expanded="true" />
+                <element signature="e#6429#6533#0" expanded="true" />
+                <element signature="e#6628#6732#0" expanded="true" />
+                <element signature="e#7020#7198#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ctpGateway.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ctpGateway/ctpGateway.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="83" column="33" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
+              <folding>
+                <element signature="e#2243#2566#0" expanded="true" />
+                <element signature="e#2665#3521#0" expanded="true" />
+                <element signature="e#4111#4149#0" expanded="true" />
+                <element signature="e#4252#4289#0" expanded="true" />
+                <element signature="e#4585#4842#0" expanded="true" />
+                <element signature="e#4941#5300#0" expanded="true" />
+                <element signature="e#5397#5462#0" expanded="true" />
+                <element signature="e#5578#5626#0" expanded="true" />
+                <element signature="e#15593#15776#0" expanded="true" />
+                <element signature="e#16204#16387#0" expanded="true" />
+                <element signature="e#17315#17328#0" expanded="true" />
+                <element signature="e#17462#17475#0" expanded="true" />
+                <element signature="e#18324#18337#0" expanded="true" />
+                <element signature="e#18615#19262#0" expanded="true" />
+                <element signature="e#19398#20201#0" expanded="true" />
+                <element signature="e#20331#20344#0" expanded="true" />
+                <element signature="e#25176#25189#0" expanded="true" />
+                <element signature="e#27054#28748#0" expanded="true" />
+                <element signature="e#28856#29639#0" expanded="true" />
+                <element signature="e#38013#38167#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -176,17 +206,22 @@
         <option value="$PROJECT_DIR$/program_top/utilities/extensions_configuration.py" />
         <option value="$PROJECT_DIR$/ctpGateway/__init__.py" />
         <option value="$PROJECT_DIR$/vtEngine.py" />
-        <option value="$PROJECT_DIR$/vtMain.py" />
         <option value="$PROJECT_DIR$/ctpGateway/CTP_connect.json" />
         <option value="$PROJECT_DIR$/ctaAlgo/ctaSetting.py" />
-        <option value="$PROJECT_DIR$/ctpGateway/ctpGateway.py" />
-        <option value="$PROJECT_DIR$/ctaAlgo/ctaEngine.py" />
         <option value="$PROJECT_DIR$/ctaAlgo/ctaBase.py" />
         <option value="$PROJECT_DIR$/ctaAlgo/CTA_setting.json" />
         <option value="$PROJECT_DIR$/program_top/utilities/process_and_main_function/my_engine.py" />
         <option value="$PROJECT_DIR$/program_top/utilities/process_and_main_function/__init__.py" />
-        <option value="$PROJECT_DIR$/ctaAlgo/ctaDemo.py" />
+        <option value="$PROJECT_DIR$/vtFunction.py" />
+        <option value="$PROJECT_DIR$/to_do_list.txt" />
+        <option value="$PROJECT_DIR$/testing_funclet.py" />
+        <option value="$PROJECT_DIR$/ctaAlgo/ctaEngine.py" />
         <option value="$PROJECT_DIR$/ctaAlgo/ctaTemplate.py" />
+        <option value="$PROJECT_DIR$/vtMain.py" />
+        <option value="$PROJECT_DIR$/vtGateway.py" />
+        <option value="$PROJECT_DIR$/ctaAlgo/uiCtaWidget.py" />
+        <option value="$PROJECT_DIR$/ctaAlgo/ctaDemo.py" />
+        <option value="$PROJECT_DIR$/ctpGateway/ctpGateway.py" />
       </list>
     </option>
   </component>
@@ -208,7 +243,7 @@
     <OptionsSetting value="true" id="更新" />
     <OptionsSetting value="true" id="状态" />
     <OptionsSetting value="true" id="编辑" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -226,7 +261,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -255,59 +289,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="program_top" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vn.trader" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vn.trader" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="program_top" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vn.trader" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vn.trader" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="program_top" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="process_and_main_function" />
+              <option name="myItemId" value="ctaAlgo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JSON" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../matlab_ctp_md_td" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vn.gossip_engine/vn_dist_engine" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -493,23 +488,23 @@
     <frame x="-1" y="0" width="1442" height="881" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.410148" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34013605" sideWeight="0.45102185" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.4496124" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34013605" sideWeight="0.54897815" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.48907682" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36190477" sideWeight="0.58985204" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -547,32 +542,11 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="40" />
+      <option name="time" value="69" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/uiBasicWidget.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3768">
-          <caret line="486" column="14" selection-start-line="486" selection-start-column="14" selection-end-line="486" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uiMainWindow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ctaAlgo/ctaSetting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vtFunction.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -591,17 +565,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          <folding>
-            <element signature="e#368#1379#0" expanded="true" />
-            <element signature="e#1924#1976#0" expanded="true" />
-            <element signature="e#2238#2289#0" expanded="true" />
-            <element signature="e#2390#2442#0" expanded="true" />
-            <element signature="e#2563#2630#0" expanded="true" />
-            <element signature="e#2752#2820#0" expanded="true" />
-            <element signature="e#3342#4080#0" expanded="true" />
-            <element signature="e#5250#5339#0" expanded="true" />
-            <element signature="e#5439#5500#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -665,17 +628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          <folding>
-            <element signature="e#368#1379#0" expanded="true" />
-            <element signature="e#1924#1976#0" expanded="true" />
-            <element signature="e#2238#2289#0" expanded="true" />
-            <element signature="e#2390#2442#0" expanded="true" />
-            <element signature="e#2563#2630#0" expanded="true" />
-            <element signature="e#2752#2820#0" expanded="true" />
-            <element signature="e#3342#4080#0" expanded="true" />
-            <element signature="e#5250#5339#0" expanded="true" />
-            <element signature="e#5439#5500#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -697,27 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vtFunction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uiBasicWidget.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3011">
-          <caret line="416" column="34" selection-start-line="416" selection-start-column="34" selection-end-line="416" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uiMainWindow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -743,24 +674,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ctpGateway/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/program_top/utilities/extensions_configuration.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="888">
           <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vtMain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -771,45 +688,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ctpGateway/ctpDataType.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1532">
-          <caret line="565" column="6" selection-start-line="565" selection-start-column="6" selection-end-line="565" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ctaAlgo/uiCtaWidget.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="111" column="8" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eventType.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ctaAlgo/CTA_setting.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ctaAlgo/ctaSetting.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eventEngine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -820,89 +702,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vtConstant.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ctpGateway/CTP_connect.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/bin/anaconda2/lib/python2.7/collections.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="37" column="6" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vtEngine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="174" column="31" selection-start-line="174" selection-start-column="27" selection-end-line="174" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ctaAlgo/ctaBacktesting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2088">
-          <caret line="313" column="12" selection-start-line="313" selection-start-column="12" selection-end-line="313" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ctaAlgo/ctaEngine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
-          <folding>
-            <element signature="e#6778#7370#0" expanded="true" />
-            <element signature="e#7770#8390#0" expanded="true" />
-            <element signature="e#10726#11870#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vtGateway.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3528">
-          <caret line="397" column="8" selection-start-line="397" selection-start-column="8" selection-end-line="397" selection-end-column="8" />
-          <folding>
-            <element signature="e#11317#11830#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ctpGateway/ctpGateway.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8928">
-          <caret line="1009" column="0" selection-start-line="1009" selection-start-column="0" selection-end-line="1009" selection-end-column="0" />
-          <folding>
-            <element signature="e#3766#3814#0" expanded="true" />
-            <element signature="e#4558#4815#0" expanded="true" />
-            <element signature="e#5701#11931#0" expanded="false" />
-            <element signature="e#18588#19235#0" expanded="true" />
-            <element signature="e#20304#20317#0" expanded="true" />
-            <element signature="e#37811#37883#0" expanded="true" />
-            <element signature="e#37986#38140#0" expanded="true" />
-            <element signature="e#38251#39890#0" expanded="true" />
-            <element signature="e#41465#42191#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2016.2/system/python_stubs/-1198109818/__builtin__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="2471" column="6" selection-start-line="2471" selection-start-column="6" selection-end-line="2471" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -927,38 +730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ctaAlgo/ctaDemo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="105" column="26" selection-start-line="105" selection-start-column="26" selection-end-line="105" selection-end-column="26" />
-          <folding>
-            <element signature="e#19#222#1" expanded="true" />
-            <element signature="e#357#769#0" expanded="true" />
-            <element signature="e#815#919#0" expanded="true" />
-            <element signature="e#943#1032#0" expanded="true" />
-            <element signature="e#1057#1136#0" expanded="true" />
-            <element signature="e#1168#2367#0" expanded="true" />
-            <element signature="e#2391#2470#0" expanded="true" />
-            <element signature="e#4068#5705#0" expanded="true" />
-            <element signature="e#6581#6866#0" expanded="true" />
-            <element signature="e#7227#7300#0" expanded="true" />
-            <element signature="e#7574#8498#0" expanded="true" />
-            <element signature="e#8595#9731#0" expanded="true" />
-            <element signature="e#9837#9901#0" expanded="true" />
-            <element signature="e#10006#10068#0" expanded="true" />
-            <element signature="e#10203#12964#0" expanded="false" />
-            <element signature="e#10662#10794#0" expanded="true" />
-            <element signature="e#10892#11056#0" expanded="true" />
-            <element signature="e#11155#11228#0" expanded="true" />
-            <element signature="e#11325#11398#0" expanded="true" />
-            <element signature="e#11502#12482#0" expanded="true" />
-            <element signature="e#12579#12610#0" expanded="true" />
-            <element signature="e#12715#12797#0" expanded="true" />
-            <element signature="e#12902#12964#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/bin/anaconda2/lib/python2.7/threading.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="371">
@@ -966,20 +737,278 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ctaAlgo/ctaTemplate.py">
+    <entry file="file://$PROJECT_DIR$/ctaAlgo/ctaBacktesting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-591">
+          <caret line="313" column="12" selection-start-line="313" selection-start-column="12" selection-end-line="313" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vtConstant.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eventEngine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#288#3502#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing_funclet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding>
+            <element signature="e#79#111#0" expanded="true" />
+            <element signature="e#139#303#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/to_do_list.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="66" column="33" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vtFunction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/bin/anaconda2/lib/python2.7/collections.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-853">
+          <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
           <folding>
-            <element signature="e#368#1379#0" expanded="true" />
-            <element signature="e#1924#1976#0" expanded="true" />
-            <element signature="e#2238#2289#0" expanded="true" />
-            <element signature="e#2390#2442#0" expanded="true" />
-            <element signature="e#2563#2630#0" expanded="true" />
-            <element signature="e#2752#2820#0" expanded="true" />
-            <element signature="e#3342#4080#0" expanded="true" />
-            <element signature="e#5250#5339#0" expanded="true" />
-            <element signature="e#5439#5500#0" expanded="true" />
+            <element signature="e#2109#2858#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ctaAlgo/CTA_setting.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ctpGateway/CTP_connect.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VT_setting.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ctaAlgo/ctaTemplate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ctpGateway/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uiMainWindow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="199" column="0" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ctpGateway/ctpDataType.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="565" column="6" selection-start-line="565" selection-start-column="6" selection-end-line="565" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uiBasicWidget.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="533" column="0" selection-start-line="533" selection-start-column="0" selection-end-line="533" selection-end-column="0" />
+          <folding>
+            <element signature="e#3767#9540#0" expanded="false" />
+            <element signature="e#6024#6146#0" expanded="true" />
+            <element signature="e#6256#6321#0" expanded="true" />
+            <element signature="e#13880#15071#0" expanded="true" />
+            <element signature="e#15176#15249#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ctaAlgo/ctaDemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="208" column="0" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#228#1" expanded="true" />
+            <element signature="e#362#719#0" expanded="true" />
+            <element signature="e#765#863#0" expanded="true" />
+            <element signature="e#887#976#0" expanded="true" />
+            <element signature="e#1001#1080#0" expanded="true" />
+            <element signature="e#1112#2386#0" expanded="true" />
+            <element signature="e#2410#2489#0" expanded="true" />
+            <element signature="e#2519#4036#0" expanded="true" />
+            <element signature="e#4154#5791#0" expanded="true" />
+            <element signature="e#6666#6951#0" expanded="true" />
+            <element signature="e#7312#7385#0" expanded="true" />
+            <element signature="e#7659#8583#0" expanded="true" />
+            <element signature="e#8680#9816#0" expanded="true" />
+            <element signature="e#9922#9986#0" expanded="true" />
+            <element signature="e#10091#10153#0" expanded="true" />
+            <element signature="e#10288#13049#0" expanded="false" />
+            <element signature="e#10747#10879#0" expanded="true" />
+            <element signature="e#10977#11141#0" expanded="true" />
+            <element signature="e#11240#11313#0" expanded="true" />
+            <element signature="e#11410#11483#0" expanded="true" />
+            <element signature="e#11587#12567#0" expanded="true" />
+            <element signature="e#12664#12695#0" expanded="true" />
+            <element signature="e#12800#12882#0" expanded="true" />
+            <element signature="e#12987#13049#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vtEngine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+          <folding>
+            <element signature="e#1106#3227#0" expanded="true" />
+            <element signature="e#3357#3440#0" expanded="true" />
+            <element signature="e#3552#3725#0" expanded="true" />
+            <element signature="e#7741#10390#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vtMain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vtGateway.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="65" column="35" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
+          <folding>
+            <element signature="e#925#1210#0" expanded="true" />
+            <element signature="e#1315#1601#0" expanded="true" />
+            <element signature="e#2120#2414#0" expanded="true" />
+            <element signature="e#6952#7729#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ctaAlgo/ctaEngine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="235" column="0" selection-start-line="235" selection-start-column="0" selection-end-line="235" selection-end-column="0" />
+          <folding>
+            <element signature="e#1101#1988#0" expanded="true" />
+            <element signature="e#7487#7665#0" expanded="true" />
+            <element signature="e#8510#8850#0" expanded="true" />
+            <element signature="e#8950#9227#0" expanded="true" />
+            <element signature="e#10732#11876#0" expanded="true" />
+            <element signature="e#13717#13849#0" expanded="true" />
+            <element signature="e#13956#14245#0" expanded="true" />
+            <element signature="e#14848#15155#0" expanded="true" />
+            <element signature="e#15269#15369#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eventType.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ctpGateway/ctpGateway.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="83" column="33" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
+          <folding>
+            <element signature="e#2243#2566#0" expanded="true" />
+            <element signature="e#2665#3521#0" expanded="true" />
+            <element signature="e#4111#4149#0" expanded="true" />
+            <element signature="e#4252#4289#0" expanded="true" />
+            <element signature="e#4585#4842#0" expanded="true" />
+            <element signature="e#4941#5300#0" expanded="true" />
+            <element signature="e#5397#5462#0" expanded="true" />
+            <element signature="e#5578#5626#0" expanded="true" />
+            <element signature="e#15593#15776#0" expanded="true" />
+            <element signature="e#16204#16387#0" expanded="true" />
+            <element signature="e#17315#17328#0" expanded="true" />
+            <element signature="e#17462#17475#0" expanded="true" />
+            <element signature="e#18324#18337#0" expanded="true" />
+            <element signature="e#18615#19262#0" expanded="true" />
+            <element signature="e#19398#20201#0" expanded="true" />
+            <element signature="e#20331#20344#0" expanded="true" />
+            <element signature="e#25176#25189#0" expanded="true" />
+            <element signature="e#27054#28748#0" expanded="true" />
+            <element signature="e#28856#29639#0" expanded="true" />
+            <element signature="e#38013#38167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ctaAlgo/uiCtaWidget.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="142" column="46" selection-start-line="142" selection-start-column="46" selection-end-line="142" selection-end-column="46" />
+          <folding>
+            <element signature="e#362#514#0" expanded="true" />
+            <element signature="e#612#784#0" expanded="true" />
+            <element signature="e#892#1295#0" expanded="true" />
+            <element signature="e#1608#1825#0" expanded="true" />
+            <element signature="e#1923#2960#0" expanded="true" />
+            <element signature="e#3077#3457#0" expanded="true" />
+            <element signature="e#3563#3693#0" expanded="true" />
+            <element signature="e#4444#4790#0" expanded="true" />
+            <element signature="e#4888#5906#0" expanded="true" />
+            <element signature="e#6017#6330#0" expanded="true" />
+            <element signature="e#6429#6533#0" expanded="true" />
+            <element signature="e#6628#6732#0" expanded="true" />
+            <element signature="e#7020#7198#0" expanded="true" />
           </folding>
         </state>
       </provider>

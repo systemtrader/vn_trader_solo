@@ -1,4 +1,4 @@
-# encoding: UTF-8
+# -*- coding: utf-8 -*-
 
 """
 这里的Demo是一个最简单的策略实现，并未考虑太多实盘中的交易细节，如：
@@ -13,7 +13,6 @@
 
 from ctaBase import *
 from ctaTemplate import CtaTemplate
-
 
 class atr_break(CtaTemplate):
 	
@@ -30,10 +29,6 @@ class atr_break(CtaTemplate):
 			   'trading',
 			   'pos']
 		
-		self.varList.extend(self.paramList)#策略实例变量表
-		
-		
-		
 		self.trading_snapshot={}#创建字典保存交易时各种临时算出来的变量快照
 		self.positions_info={}#空字典，存储持仓记录，主要是成交后记录持仓成交价格等信息
 		
@@ -41,8 +36,6 @@ class atr_break(CtaTemplate):
 	
 	def __init__(self,cta_engine,settings):
 		super(atr_break, self).__init__(cta_engine,settings)
-		
-		
 		
 		self.__parameter_initialisation()
 		pass
@@ -93,6 +86,9 @@ class atr_break(CtaTemplate):
 		self.positions_info[session_instrument_key]['stop_profiting_price']=stop_profiting_price
 		
 		print '委托已成交'
+		
+		self.dynamic_monitored.update(self.positions_info)#持仓信息字典更新到界面动态监控
+		
 		pass
 	
 	def onStop(self):
@@ -109,7 +105,9 @@ class atr_break(CtaTemplate):
 			self.trading_snapshot['open_today']=tick.openPrice
 			self.trading_snapshot["upper_limit"]=tick.upperLimit
 			self.trading_snapshot["lower_limit"]=tick.lowerLimit
+			self.dynamic_monitored.update(self.trading_snapshot)#更新到界面监控
 			pass
+		
 				
 		'''
 		if tick.datetime.minute#取得当前tick所在的分钟
@@ -168,9 +166,6 @@ class atr_break(CtaTemplate):
 		#计算策略指标
 		# 发出状态更新事件
 		
-		
-		
-		
 		if not self.trading_snapshot.has_key('upper_band'):#如果盘中缓存没有记录过本日开盘价的上band
 			self.trading_snapshot['upper_band']=self.trading_snapshot['open_today']*(1+self.band_range)
 			self.trading_snapshot['lower_band']=self.trading_snapshot['open_today']*(1-self.band_range)
@@ -183,12 +178,12 @@ class atr_break(CtaTemplate):
 				whether_open_long=self.trading_snapshot['upper_band']<=bar.close#布尔值，是否开多
 				whether_open_short=self.trading_snapshot['lower_band']>=bar.close#布尔值，是否开空
 				if whether_open_long:
-					self.buy(self.trading_snapshot["upper_limit"],1)#市价买多一手(以涨停价格委托)
+					self.buy(self.trading_snapshot["upper_limit"], 1)#市价买多一手(以涨停价格委托)
 				if whether_open_short:
-					self.short(self.trading_snapshot["lower_limit"],1)#市价卖空一手(以跌停价格委托)
-				
-			except Exception,current_exception:
-				print u'显示报单异常信息:',current_exception
+					self.short(self.trading_snapshot["lower_limit"], 1)#市价卖空一手(以跌停价格委托)
+			
+			except Exception, current_exception:
+				print u'显示报单异常信息:', current_exception
 				pass
 		else:#如果有持仓
 			current_session_instrument_key=(self.sessionID,bar.vtSymbol)
@@ -207,9 +202,10 @@ class atr_break(CtaTemplate):
 					self.cover(self.trading_snapshot["upper_limit"], 1)
 				pass
 			pass
+		
+		
 		self.putEvent()
 	pass
-
 
 ########################################################################
 class DoubleEmaDemo(CtaTemplate):

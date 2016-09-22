@@ -42,9 +42,10 @@ def main():
 
 from program_top.utilities.extensions_configuration import load_shared_objects
 from program_top.utilities.environment_and_platform import get_current_environment_pack
+from testing_funclet import testlet
 	
 if __name__ == '__main__':
-	
+	testlet()
 	current_env=environ
 	current_start_script=path.realpath(__file__)#取得当前main.py脚本的绝对路径
 	current_environment_pack=get_current_environment_pack(start_script_absolute_filename=current_start_script)

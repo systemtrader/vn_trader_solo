@@ -1,11 +1,11 @@
-# encoding: UTF-8
+# -*- coding: utf-8 -*-
 
 import time
 
 from eventEngine import *
 
 from vtConstant import *
-
+from program_top.utilities.debugging import callback_debug_start
 
 ########################################################################
 class VtGateway(object):
@@ -34,6 +34,8 @@ class VtGateway(object):
 	def onTrade(self, trade):
 		"""成交信息推送"""
 		# 通用事件
+		#callback_debug_start()
+		
 		event1 = Event(type_=EVENT_TRADE)
 		event1.dict_['data'] = trade
 		self.eventEngine.put(event1)
@@ -42,11 +44,14 @@ class VtGateway(object):
 		event2 = Event(type_=EVENT_TRADE+trade.vtSymbol)
 		event2.dict_['data'] = trade
 		self.eventEngine.put(event2)
+		pass
 	
 	#----------------------------------------------------------------------
 	def onOrder(self, order):
 		"""订单变化推送"""
 		# 通用事件
+		#callback_debug_start()
+		
 		event1 = Event(type_=EVENT_ORDER)
 		event1.dict_['data'] = order
 		self.eventEngine.put(event1)
@@ -55,11 +60,13 @@ class VtGateway(object):
 		event2 = Event(type_=EVENT_ORDER+order.vtOrderID)
 		event2.dict_['data'] = order
 		self.eventEngine.put(event2)
+		pass
 	
 	#----------------------------------------------------------------------
 	def onPosition(self, position):
 		"""持仓信息推送"""
 		# 通用事件
+		callback_debug_start()
 		event1 = Event(type_=EVENT_POSITION)
 		event1.dict_['data'] = position
 		self.eventEngine.put(event1)
@@ -68,11 +75,14 @@ class VtGateway(object):
 		event2 = Event(type_=EVENT_POSITION+position.vtSymbol)
 		event2.dict_['data'] = position
 		self.eventEngine.put(event2)
+		
+		pass
 	
 	#----------------------------------------------------------------------
 	def onAccount(self, account):
 		"""账户信息推送"""
 		# 通用事件
+		callback_debug_start()
 		event1 = Event(type_=EVENT_ACCOUNT)
 		event1.dict_['data'] = account
 		self.eventEngine.put(event1)
@@ -81,6 +91,7 @@ class VtGateway(object):
 		event2 = Event(type_=EVENT_ACCOUNT+account.vtAccountID)
 		event2.dict_['data'] = account
 		self.eventEngine.put(event2)
+		pass
 	
 	#----------------------------------------------------------------------
 	def onError(self, error):
@@ -269,6 +280,7 @@ class VtOrderData(VtBaseData):
 		# CTP/LTS相关
 		self.frontID = EMPTY_INT				# 前置机编号
 		self.sessionID = EMPTY_INT			  # 连接编号
+		pass
 
 	
 ########################################################################

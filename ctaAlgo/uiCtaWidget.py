@@ -53,7 +53,6 @@ class CtaValueMonitor(QtGui.QTableWidget):
 				cell = self.keyCellDict[k]
 				cell.setText(unicode(v))
 
-
 ########################################################################
 class CtaStrategyManager(QtGui.QGroupBox):
 	"""策略管理组件"""
@@ -79,6 +78,7 @@ class CtaStrategyManager(QtGui.QGroupBox):
 		
 		self.paramMonitor = CtaValueMonitor(self)
 		self.varMonitor = CtaValueMonitor(self)
+		self.dynamicMonitor=CtaValueMonitor(self)
 		
 		maxHeight = 60
 		self.paramMonitor.setMaximumHeight(maxHeight)
@@ -103,10 +103,14 @@ class CtaStrategyManager(QtGui.QGroupBox):
 		hbox3 = QtGui.QHBoxLayout()
 		hbox3.addWidget(self.varMonitor)
 		
+		hbox4=QtGui.QHBoxLayout()
+		hbox4.addWidget(self.dynamicMonitor)
+		
 		vbox = QtGui.QVBoxLayout()
 		vbox.addLayout(hbox1)
 		vbox.addLayout(hbox2)
 		vbox.addLayout(hbox3)
+		vbox.addLayout(hbox4)
 
 		self.setLayout(vbox)
 		
@@ -120,6 +124,12 @@ class CtaStrategyManager(QtGui.QGroupBox):
 		varDict = self.ctaEngine.getStrategyVar(self.name)
 		if varDict:
 			self.varMonitor.updateData(varDict)
+		
+		dynamic_dict=self.ctaEngine.getStrategyDynamic(self.name)
+		if dynamic_dict:
+			self.dynamicMonitor.updateData(dynamic_dict)
+		
+		pass
 			
 	#----------------------------------------------------------------------
 	def registerEvent(self):
@@ -163,6 +173,10 @@ class CtaEngineManager(QtGui.QWidget):
 		
 		# 记录日志
 		self.ctaEngine.writeCtaLog(u'CTA引擎启动成功')
+		self.load()#自动加载策略
+		self.initAll()#自动初始化所有策略
+		self.startAll()#自动启动所有策略的交易
+		pass
 		
 	#----------------------------------------------------------------------
 	def initUi(self):

@@ -1,4 +1,4 @@
-# encoding: UTF-8
+# -*- coding: utf-8 -*-
 
 '''
 本文件包含了CTA引擎中的策略开发用模板，开发策略时需要继承CtaTemplate类。
@@ -7,8 +7,6 @@
 from ctaBase import *
 from vtConstant import *
 import thread
-
-
 ########################################################################
 class CtaTemplate(object):
 	"""CTA策略模板"""
@@ -25,6 +23,7 @@ class CtaTemplate(object):
 		
 		# 本策略自己的order字典，自己发过的单就存入这个字典中，当回报返回时匹配就做处理，否则忽略，键是tuple,(strategy_name,frontID,sessionID,vt_orderID)，其中vt_orderID为报单时返回的值
 		self.order_map={}
+		self.dynamic_monitored={}#动态监控的变量，当想要在界面上显示什么变量时就使用dict来update此字典
 		
 		
 		try:#记录柜台ID和会话ID
